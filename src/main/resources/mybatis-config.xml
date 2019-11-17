@@ -11,11 +11,13 @@
   		<typeAliases>
   			<package name="com.atguigu.crud.bean"/>
   		</typeAliases>
-  		
-  		
+
+		<!--	分页插件，property设置true合理化分页数据-->
   		<plugins>	
-  			<plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
-  		
+  			<plugin interceptor="com.github.pagehelper.PageInterceptor">
+				<property name="reasonable" value="true"></property>
+			</plugin>
+
   		</plugins>
   
   

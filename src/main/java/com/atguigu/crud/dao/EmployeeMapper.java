@@ -9,6 +9,8 @@ public interface EmployeeMapper {
     
     long countByExample(EmployeeExample example);
 
+    long countByEmpName(String empName);
+
    
     int deleteByExample(EmployeeExample example);
 
